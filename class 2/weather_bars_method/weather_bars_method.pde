@@ -8,13 +8,17 @@ void setup() {
 }
 
 void draw() {
-  background(255,200,50);
+  background(255, 200, 50);
   float[] m = barMargins(temp);
+  drawBars(m, temp);
+}
+
+void drawBars(float[] m, int[] data) {
   float wf = m[0];
   float hf = m[1];
   translate(margin, height-margin);
-  for (int i=0; i < temp.length; i++) { //or i=i+1
-    rect(i*wf, 0, wf-1, -temp[i]*hf);
+  for (int i=0; i < data.length; i++) { //or i=i+1
+    rect(i*wf, 0, wf-1, -data[i]*hf);
   };
 }
 
@@ -59,3 +63,4 @@ int[] temp = {
   57, 
   58
 };
+
