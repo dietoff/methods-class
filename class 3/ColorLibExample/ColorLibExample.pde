@@ -1,7 +1,7 @@
 import colorLib.*;
 
 Palette p;
-// get library from https://github.com/vormplus/colorLib
+// get library from https://code.google.com/p/colorlib/
 // see http://vormplus.be/blog/article/an-introduction-to-colorlib
 // and http://vormplus.be/blog/article/creating-gradients-with-colorlib
 
