@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 JSONObject json;
 
 // Here's the URL we're getting our weather data from
-String url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Boston,MA&mode=json&units=metric&cnt=500";
+String url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Boston,MA&mode=json&units=metric&cnt=5";
 
 // and storing it in this JSON array
 JSONArray jsonData;

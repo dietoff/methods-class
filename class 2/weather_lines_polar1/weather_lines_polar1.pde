@@ -1,32 +1,35 @@
 
 float barw = 15;
 int margin = 25;
+float maxR = 180;
 
 void setup() {
   size(500, 500);
+  textAlign(CENTER);
 }
 
 void draw() {
   background(200);
-
-
   translate(width/2, height/2);
   scale(1.5);
-
+  strokeWeight(1);
   stroke(150);
-  for (int j=0; j < 180; j=j+20) {
+  for (int j=0; j < maxR; j=j+20) {
     noFill();
     ellipse(0, 0, j, j);
     fill(40);
   }
 
   noFill();
-  stroke(0);
+  stroke(0,180);
+  strokeWeight(5);
   for (int i=0; i < temp.length; i++) {
     float angle = 2 * PI / float(temp.length);
     rotate(angle);
     line(0, 0, 0, temp[i]);
+    text(temp[i],0,maxR/2.0);
   };
+
 }
 
 int[] temp = {
