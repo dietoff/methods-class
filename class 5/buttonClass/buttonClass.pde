@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  background(50);
+  background(0);
   b1.update();
   b2.update();
   if (b1.pressed) println("button1 pressed");
