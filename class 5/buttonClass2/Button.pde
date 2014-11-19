@@ -2,6 +2,7 @@ class Button {
   int x, y, h, w;
   Boolean pressed = false;
   Boolean over = false;
+  
   color cpressed = color(150, 0, 0);
   color cover = color(150, 150, 0);
   color cidle = color(130, 130, 130);
@@ -41,6 +42,7 @@ class Button {
 
 // this method determines the state of buttons
   void update() {
+    
     if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+h) {
       if (mousePressed) {
         pressed = true;

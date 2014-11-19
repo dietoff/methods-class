@@ -1,4 +1,4 @@
-
+ 
 ArrayList<Button> buttons;
 
 void setup() {
@@ -13,7 +13,6 @@ void setup() {
 
 void draw() {
   background(50);
-
   for (Button b : buttons) {
     b.update();
     if (b.pressed) println(b.name + " pressed");
